@@ -23,10 +23,9 @@ deploy:
   api-key: "${GITHUB_TOKEN}"
   file_glob: true
   file:
-  - Structure-API-Plugin/target/StructureAPI*.jar
-  - Structure-API-Plugin/target/classes/gettext-report.txt
+  - CargoManagement/target/CargoManagement*.jar
+  - CargoManagement/target/classes/gettext-report.txt
   - changelog.md
-  - Structure-API/target/Structure-API*.jar
   skip_cleanup: true
   on:
     tags: true
