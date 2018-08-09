@@ -63,6 +63,9 @@ permissions:
   cargo.network:
     description: 'Grants access to /cargo network - shows information about your networks'
 
+  cargo.network.clear:
+    description: 'Grants access to /cargo network clear - clears all the networks for this player'
+
   cargo.network.list:
     description: 'Grants access to /cargo network list - lists the networks'
 
@@ -73,12 +76,15 @@ permissions:
     description: 'Grants access to /cargo network tickall - ticks all active networks'
 
   cargo.recipe.connector:
+    default: true
     description: 'permission to craft the connector recipe'
 
   cargo.recipe.input:
+    default: true
     description: 'permission to craft the input recipe'
 
   cargo.recipe.output:
+    default: true
     description: 'permission to craft the output recipe'
 
   cargo.reload:
