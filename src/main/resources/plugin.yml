@@ -1,0 +1,92 @@
+name: CargoManagement
+main: ${project.groupId}.${project.artifactId}
+version: ${project.version}
+description: ${project.name} v${gitTag}-${buildNumber}
+author: R4zorax
+api-version: 1.13
+
+commands:
+  cargo:
+    aliases: [cargomanagement]
+    description: 'access the cargo command-line'
+    permission: cargo.use
+permissions:
+  #
+  # Permission Groups
+  # =================
+  cargo.*:
+    children:
+      cargo.doc: true
+      cargo.give: true
+      cargo.lang: true
+      cargo.load: true
+      cargo.network: true
+      cargo.network.list: true
+      cargo.network.tick: true
+      cargo.network.tickall: true
+      cargo.recipe: true
+      cargo.recipe.connector: true
+      cargo.recipe.input: true
+      cargo.recipe.output: true
+      cargo.reload: true
+      cargo.save: true
+      cargo.use: true
+
+  cargo.network.*:
+    children:
+      cargo.network.list: true
+      cargo.network.tick: true
+      cargo.network.tickall: true
+
+  cargo.recipe.*:
+    default: true
+    children:
+      cargo.recipe.connector: true
+      cargo.recipe.input: true
+      cargo.recipe.output: true
+
+  #
+  # Permission Descriptions
+  # =======================
+  cargo.doc:
+    description: 'Grants access to /cargo doc [format] [arg] - saves documentation of the commands to a file'
+
+  cargo.give:
+    description: 'Grants access to /cargo give <node-type> [amount] [player] - gives the player a cargo-item'
+
+  cargo.lang:
+    description: 'Grants access to /cargo lang <language> - changes the language of the plugin, and reloads'
+
+  cargo.load:
+    description: 'Grants access to /cargo load - loads networks from disk'
+
+  cargo.network:
+    description: 'Grants access to /cargo network - shows information about your networks'
+
+  cargo.network.list:
+    description: 'Grants access to /cargo network list - lists the networks'
+
+  cargo.network.tick:
+    description: 'Grants access to /cargo network tick - ticks the current players networks'
+
+  cargo.network.tickall:
+    description: 'Grants access to /cargo network tickall - ticks all active networks'
+
+  cargo.recipe.connector:
+    description: 'permission to craft the connector recipe'
+
+  cargo.recipe.input:
+    description: 'permission to craft the input recipe'
+
+  cargo.recipe.output:
+    description: 'permission to craft the output recipe'
+
+  cargo.reload:
+    description: 'Grants access to /cargo reload - reloads cargo configuration'
+
+  cargo.save:
+    description: 'Grants access to /cargo save - saves the current networks to disk'
+
+  cargo.use:
+    default: true
+    description: 'Grants access to /cargo - access the cargo command-line'

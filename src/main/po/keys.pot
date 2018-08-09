@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, java-format
+msgid "§eYou do not have access (§4{0}§e)"
+msgstr ""
+
+#, java-format
+msgid "§eInvalid command: {0}"
+msgstr ""
+
+#, java-format
+msgid "§7Usage: {0}"
+msgstr ""
+
+#, java-format
+msgid "§7Use §3/{0} ? {1}§7 to display next page\n"
+msgstr ""
+
+#, java-format
+msgid "§7Use §3/{0} ? {1} §7 to display previous page\n"
+msgstr ""
+
+msgid "saves documentation of the commands to a file"
+msgstr ""
+
+#, java-format
+msgid "Wrote documentation to {0}"
+msgstr ""
+
+#, java-format
+msgid "§4Error writing documentation: {0}"
+msgstr ""
+
+msgid "changes the language of the plugin, and reloads"
+msgstr ""
+
+#, java-format
+msgid "§aSuccessfully changed language to §e{0}"
+msgstr ""
+
+#, java-format
+msgid "§cFailed to change language to §e{0}"
+msgstr ""
+
+msgid "§9Supported Languages:\n"
+msgstr ""
+
+#, java-format
+msgid "§f{0} §7{1} §9 by {2} §7{3}\n"
+msgstr ""
+
+msgid "§cUnable to locate any languages."
+msgstr ""
+
+msgid "Command"
+msgstr ""
+
+msgid "Permission"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+#, java-format
+msgid "§f{0}x §7{1}"
+msgstr ""
+
+#, java-format
+msgid "§7{0}"
+msgstr ""
+
+msgid "d"
+msgstr ""
+
+msgid "h"
+msgstr ""
+
+msgid "m"
+msgstr ""
+
+msgid "s"
+msgstr ""
+
+#, java-format
+msgid "{0,number,0}:{1,number,00}.{2,number,000}"
+msgstr ""
+
+msgid "access the cargo command-line"
+msgstr ""
+
+msgid "reloads cargo configuration"
+msgstr ""
+
+msgid "CargoManagement configuration reloaded"
+msgstr ""
+
+msgid "saves the current networks to disk"
+msgstr ""
+
+msgid "Networks saved to file"
+msgstr ""
+
+msgid "loads networks from disk"
+msgstr ""
+
+msgid "Networks loaded from file"
+msgstr ""
+
+msgid "permission to craft the connector recipe"
+msgstr ""
+
+msgid "permission to craft the input recipe"
+msgstr ""
+
+msgid "permission to craft the output recipe"
+msgstr ""
+
+msgid "gives the player a cargo-item"
+msgstr ""
+
+msgid "player-name is required when executing as console"
+msgstr ""
+
+#, java-format
+msgid "Unknown type of node {0}"
+msgstr ""
+
+#, java-format
+msgid "Gave you a {0}-node"
+msgstr ""
+
+msgid "Inventory is full"
+msgstr ""
+
+#, java-format
+msgid "Player {0} is not valid or not online"
+msgstr ""
+
+msgid "shows information about your networks"
+msgstr ""
+
+msgid "lists the networks"
+msgstr ""
+
+msgid "This command can only be executed in-game"
+msgstr ""
+
+msgid "Networks:"
+msgstr ""
+
+msgid "§2ONLINE"
+msgstr ""
+
+msgid "¤OFFLINE"
+msgstr ""
+
+#, java-format
+msgid "{0} - {1}"
+msgstr ""
+
+msgid "ticks the current players networks"
+msgstr ""
+
+msgid "Ticked network"
+msgstr ""
+
+msgid "ticks all active networks"
+msgstr ""
+
+msgid "Ticked all active networks"
+msgstr ""
+
+msgid "clears all the networks for this player"
+msgstr ""
+
+#, java-format
+msgid "Cleared all networks for {0}"
+msgstr ""
+
+msgid "§cYou do not have permission to place cargo-nodes"
+msgstr ""
+
+#, java-format
+msgid "Cleared filter for output-node - {0}"
+msgstr ""
+
+#, java-format
+msgid "Filter for output-node is {0} - {1}"
+msgstr ""
+
+#, java-format
+msgid "Added §9{0}§r to the filter {1} - {2}"
+msgstr ""
+
+msgid "§cNode is not part of your network"
+msgstr ""
+
+#, java-format
+msgid "Node is {0}"
+msgstr ""
+
+#, java-format
+msgid "Placed connector node - {0}"
+msgstr ""
+
+#, java-format
+msgid "Placed output-node - {0}"
+msgstr ""
+
+#, java-format
+msgid "Placed input-node - {0}"
+msgstr ""
+
+msgid "§eYou do not have permission to craft this item"
+msgstr ""
+
+msgid "§4OFFLINE"
+msgstr ""
+
+msgid "Connector"
+msgstr ""
+
+msgid "Connects other cargo-nodes to the network"
+msgstr ""
+
+msgid "Input"
+msgstr ""
+
+msgid "Pulls items out of an inventory and into the cargo-network"
+msgstr ""
+
+msgid "Output"
+msgstr ""
+
+msgid "Delivers items from the network to an attached inventory"
+msgstr ""

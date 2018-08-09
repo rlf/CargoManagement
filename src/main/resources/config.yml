@@ -1,0 +1,43 @@
+#
+# Config file for CargoManagement
+#
+language: en
+tickTimer:
+  enabled: true
+  # move items every 2nd second
+  everyMs: 2000
+cargonodes:
+  connector:
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM0MTlhNDRjNWI5NjdmNDczMTZkMWJlZDNjYzYzMmJkZWQxOTlhNWMzNDIxMTc5MWM3MGY5OThmZGJkNiJ9fX0='
+  input:
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjVlOTE1MmVmZDg5MmY2MGQ3ZTBkN2U1MzM2OWUwNDc3OWVkMzExMWUyZmIyNzUyYjZmNGMyNmRmNTQwYWVkYyJ9fX0='
+  output:
+    texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWIxZmRhMDQyOTkwODliMDFjY2VlMzljZjg4ZTljNzFiZGQzOTRiZmU0NzNlYWUzNjRmNTM3OTNhNmQ1OTMifX19'
+
+recipes:
+  enabled: true
+  connector:
+    shape:
+    - ' R '
+    - 'RCR'
+    - ' R '
+    ingredients:
+      R: REDSTONE
+      C: CHEST
+  output:
+    shape:
+    - 'c '
+    - 'HC'
+    ingredients:
+      c: COMPARATOR
+      H: HOPPER
+      C: CHEST
+  input:
+    shape:
+    - 'R '
+    - 'DC'
+    ingredients:
+      R: REPEATER
+      D: DROPPER
+      C: CHEST
+version: 1
