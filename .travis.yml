@@ -23,8 +23,8 @@ deploy:
   api-key: "${GITHUB_TOKEN}"
   file_glob: true
   file:
-  - CargoManagement/target/CargoManagement*.jar
-  - CargoManagement/target/classes/gettext-report.txt
+  - target/CargoManagement*.jar
+  - target/classes/gettext-report.txt
   - changelog.md
   skip_cleanup: true
   on:
