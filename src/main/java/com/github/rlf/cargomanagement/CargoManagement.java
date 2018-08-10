@@ -10,6 +10,8 @@ import com.github.rlf.cargomanagement.model.ConnectorNode;
 import com.github.rlf.cargomanagement.storage.MemoryBlockStorage;
 import dk.lockfuglsang.minecraft.file.FileUtil;
 import dk.lockfuglsang.minecraft.util.TimeUtil;
+import javafx.scene.chart.PieChart;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -53,6 +55,12 @@ public class CargoManagement extends JavaPlugin {
         getCommand("cargo").setExecutor(new CargoCommand(this, storage, nodeFactory));
         configureTickTimer(config);
         configureRecipes(config, nodeFactory);
+        try {
+            Metrics metrics = new Metrics(this);
+            metrics.addCustomChart(new Metrics.SimplePie("connector_range", () -> ""+ConnectorNode.RANGE));
+        } catch (Exception e) {
+            getLogger().log(Level.WARNING, "Unable to enable metrics");
+        }
     }
 
     private void configureRecipes(FileConfiguration config, CargoNodeFactory nodeFactory) {
