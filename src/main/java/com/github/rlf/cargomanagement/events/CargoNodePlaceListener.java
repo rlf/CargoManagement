@@ -37,7 +37,10 @@ public class CargoNodePlaceListener implements Listener {
             });
         } else if (e.getNode() instanceof InputNode) {
             CargoNetwork network = storage.add(e.getPlayer(), (InputNode) e.getNode());
-            e.getPlayer().sendMessage(tr("Placed input-node - {0}", CargoNetworkFormatter.getStatus(network, e.getNode())));
+            e.getPlayer().sendMessage(new String[]{
+                    tr("Placed input-node - {0}", CargoNetworkFormatter.getStatus(network, e.getNode())),
+                    tr("\u00a78Connect it to an output-node to activate the network.")
+            });
         } else {
             logger.warning("Unsupported type of cargo-node " + e.getNode());
         }
