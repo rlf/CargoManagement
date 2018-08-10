@@ -25,10 +25,16 @@ public class CargoNodePlaceListener implements Listener {
     public void onCargoNodePlace(CargoNodePlacedEvent<?> e) {
         if (e.getNode() instanceof ConnectorNode) {
             CargoNetwork network = storage.add(e.getPlayer(), (ConnectorNode) e.getNode());
-            e.getPlayer().sendMessage(tr("Placed connector node - {0}", CargoNetworkFormatter.getStatus(network, e.getNode())));
+            e.getPlayer().sendMessage(new String[] {
+                    tr("Placed connector node - {0}", CargoNetworkFormatter.getStatus(network, e.getNode())),
+                    tr("\u00a78Connect other nodes within {0} blocks to expand the network.", ConnectorNode.RANGE)
+            });
         } else if (e.getNode() instanceof OutputNode) {
             CargoNetwork network = storage.add(e.getPlayer(), (OutputNode) e.getNode());
-            e.getPlayer().sendMessage(tr("Placed output-node - {0}", CargoNetworkFormatter.getStatus(network, e.getNode())));
+            e.getPlayer().sendMessage(new String[]{
+                    tr("Placed output-node - {0}", CargoNetworkFormatter.getStatus(network, e.getNode())),
+                    tr("\u00a78Right click it with an item to enable filtering.")
+            });
         } else if (e.getNode() instanceof InputNode) {
             CargoNetwork network = storage.add(e.getPlayer(), (InputNode) e.getNode());
             e.getPlayer().sendMessage(tr("Placed input-node - {0}", CargoNetworkFormatter.getStatus(network, e.getNode())));

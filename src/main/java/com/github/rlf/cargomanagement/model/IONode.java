@@ -3,6 +3,7 @@ package com.github.rlf.cargomanagement.model;
 import org.bukkit.Location;
 import org.bukkit.block.Container;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.util.Vector;
 
 import java.util.Objects;
 
@@ -19,8 +20,17 @@ public abstract class IONode extends CargoNode {
     }
 
     public Inventory getInventory() {
-        if (container.getChunk().isLoaded() && container.getBlock().getState() instanceof Container) {
-            return ((Container) container.getBlock().getState()).getInventory();
+        if (container.getChunk().isLoaded()) {
+            if (container.getBlock().getState() instanceof Container) {
+                return ((Container) container.getBlock().getState()).getInventory();
+            } else {
+                // try looking one block further
+                Vector vector = container.clone().subtract(getLocation()).toVector();
+                Location secondary = container.clone().add(vector);
+                if (secondary.getBlock().getState() instanceof Container) {
+                    return ((Container) container.getBlock().getState()).getInventory();
+                }
+            }
         }
         return null;
     }

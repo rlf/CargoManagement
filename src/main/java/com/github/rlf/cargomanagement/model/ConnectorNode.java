@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ConnectorNode extends CargoNode {
-    private static final int RANGE = 5;
+    public static int RANGE = 5;
     private static final Vector X_AXIS = new Vector(1, 0, 0);
     private static final Vector Y_AXIS = new Vector(0, 1, 0);
     private static final Vector Z_AXIS = new Vector(0, 0, 1);

@@ -6,6 +6,7 @@ import com.github.rlf.cargomanagement.events.CargoNodePlaceListener;
 import com.github.rlf.cargomanagement.events.PlayerListener;
 import com.github.rlf.cargomanagement.item.CargoNodeFactory;
 import com.github.rlf.cargomanagement.item.CargoNodeRecipeFactory;
+import com.github.rlf.cargomanagement.model.ConnectorNode;
 import com.github.rlf.cargomanagement.storage.MemoryBlockStorage;
 import dk.lockfuglsang.minecraft.file.FileUtil;
 import dk.lockfuglsang.minecraft.util.TimeUtil;
@@ -40,6 +41,7 @@ public class CargoManagement extends JavaPlugin {
 
     private void initializePlugin() {
         FileConfiguration config = getConfig();
+        ConnectorNode.RANGE = config.getInt("cargonodes.connector.range", 8);
         PluginManager pluginManager = getServer().getPluginManager();
         nodeFactory = new CargoNodeFactory(config);
         storage = new MemoryBlockStorage();
