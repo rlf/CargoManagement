@@ -1,4 +1,4 @@
-## Change Log for v1.0.5..v1.0.5
+## Change Log for v1.0.4..v1.0.5
 
 
 ## Translations
