@@ -220,17 +220,36 @@ msgid "Placed connector node - {0}"
 msgstr ""
 
 #, java-format
+msgid "§8Connect other nodes within {0} blocks to expand the network."
+msgstr ""
+
+#, java-format
 msgid "Placed output-node - {0}"
+msgstr ""
+
+msgid "§8Right click it with an item to enable filtering."
 msgstr ""
 
 #, java-format
 msgid "Placed input-node - {0}"
 msgstr ""
 
+msgid "§8Connect it to an output-node to activate the network."
+msgstr ""
+
 msgid "§eYou do not have permission to craft this item"
 msgstr ""
 
-msgid "§4OFFLINE"
+msgid "§2connected"
+msgstr ""
+
+msgid "§8disconnected"
+msgstr ""
+
+msgid "§2chest"
+msgstr ""
+
+msgid "§8no chest"
 msgstr ""
 
 msgid "Connector"

@@ -28,7 +28,7 @@ public abstract class IONode extends CargoNode {
                 Vector vector = container.clone().subtract(getLocation()).toVector();
                 Location secondary = container.clone().add(vector);
                 if (secondary.getBlock().getState() instanceof Container) {
-                    return ((Container) container.getBlock().getState()).getInventory();
+                    return ((Container) secondary.getBlock().getState()).getInventory();
                 }
             }
         }
