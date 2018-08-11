@@ -13,7 +13,7 @@ import java.util.Set;
  * Represents a cargo-network (i.e. all the nodes placed by a user, within a world).
  */
 public class CargoNetwork {
-    private boolean isDirty = false;
+    private boolean isDirty = true;
 
     private String world;
 
@@ -21,7 +21,7 @@ public class CargoNetwork {
     private Set<InputNode> inputs = new HashSet<>();
     private Set<OutputNode> outputs = new HashSet<>();
 
-    private Set<ConnectedNet> connectedNets;
+    private Set<ConnectedNet> connectedNets = new HashSet<>();
 
     public CargoNetwork(String world) {
         this.world = world;
