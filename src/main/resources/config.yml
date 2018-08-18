@@ -8,11 +8,17 @@ tickTimer:
   everyMs: 2000
 cargonodes:
   connector:
+    name: Connector
+    description: Connects other cargo-nodes to the network
     texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM0MTlhNDRjNWI5NjdmNDczMTZkMWJlZDNjYzYzMmJkZWQxOTlhNWMzNDIxMTc5MWM3MGY5OThmZGJkNiJ9fX0='
     range: 7
   input:
+    name: Input
+    description: Pulls items out of an inventory and into the cargo-network
     texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjVlOTE1MmVmZDg5MmY2MGQ3ZTBkN2U1MzM2OWUwNDc3OWVkMzExMWUyZmIyNzUyYjZmNGMyNmRmNTQwYWVkYyJ9fX0='
   output:
+    name: Output
+    description: Delivers items from the network to an attached inventory
     texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTYyZGRiZWM4ZmE5ZDMyMjhjOTBjZjg3ZTRlN2JjMGE4ZWUyYmNmOGIxYzc3ODk2ZWI5N2YzODMwYTVkNmUifX19'
 
 recipes:

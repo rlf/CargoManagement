@@ -251,21 +251,3 @@ msgstr ""
 
 msgid "§8no chest"
 msgstr ""
-
-msgid "Connector"
-msgstr ""
-
-msgid "Connects other cargo-nodes to the network"
-msgstr ""
-
-msgid "Input"
-msgstr ""
-
-msgid "Pulls items out of an inventory and into the cargo-network"
-msgstr ""
-
-msgid "Output"
-msgstr ""
-
-msgid "Delivers items from the network to an attached inventory"
-msgstr ""

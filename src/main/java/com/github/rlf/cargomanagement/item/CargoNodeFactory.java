@@ -44,14 +44,14 @@ public class CargoNodeFactory {
 
     public CargoNodeFactory(FileConfiguration config) {
         connectorItem = ItemStackUtil.createItemStackSkull(config.getString("cargonodes.connector.texture", CONNECTOR_NODE_TEXTURE),
-                tr("Connector"),
-                tr("Connects other cargo-nodes to the network"));
+                tr(config.getString("cargonodes.connector.name", "Connector")),
+                tr(config.getString("carognodes.connector.description", "Connects other cargo-nodes to the network")));
         inputItem = ItemStackUtil.createItemStackSkull(config.getString("cargonodes.input.texture", INPUT_NODE_TEXTURE),
-                tr("Input"),
-                tr("Pulls items out of an inventory and into the cargo-network"));
+                tr(config.getString("carognodes.input.description", "Input")),
+                tr(config.getString("carognodes.input.description", "Pulls items out of an inventory and into the cargo-network")));
         outputItem = ItemStackUtil.createItemStackSkull(config.getString("cargonodes.output.texture", OUTPUT_NODE_TEXTURE),
-                tr("Output"),
-                tr("Delivers items from the network to an attached inventory"));
+                tr(config.getString("carognodes.output.description", "Output")),
+                tr(config.getString("carognodes.output.description", "Delivers items from the network to an attached inventory")));
         cargoNodes = Arrays.asList(connectorItem, inputItem, outputItem);
 
         connectorUUID = getUUID(connectorItem);
